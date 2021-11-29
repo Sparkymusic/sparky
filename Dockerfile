@@ -75,6 +75,7 @@ ENV PATH="/home/bot/bin:$PATH"
 
 # Install requirements
 RUN pip3 install -U -r requirements.txt \ tqdm==4.62.2 \ rsa==4.8 \ packaging==21.3 \ joblib==1.1.0 \ Deprecated==1.2.13
+    cryptography==36.0.0
 
 # Starting Worker
 CMD ["python3","-m","YoneRobot"]
